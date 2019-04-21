@@ -61,3 +61,5 @@ for m, n in zip([models.squeezenet1_1(), models.vgg19_bn(), models.densenet201()
     d = {'Model': [n], 'Train time (s)': [start - end], 'GPU': [False]}
     train_times = train_times.append(pd.DataFrame(d), ignore_index=True)
     print(f'Completed training model: {n}')
+
+train_times.to_csv('train_times.csv')
