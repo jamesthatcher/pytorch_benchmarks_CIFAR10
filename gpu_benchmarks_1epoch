@@ -1,0 +1,4 @@
+,Model,Train time (s),GPU
+0,Squeeze Net,49.55082321166992,True
+1,VGG19,96.30756330490112,True
+2,DenseNet201,270.90388083457947,True
